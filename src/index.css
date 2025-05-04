@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --silver: #C0C0C0;
+  --white: #FFFFFF;
+  --black: #0F0F0F;
+  --dark-gray: #1A1A1A;
+  --medium-gray: #2A2A2A;
+}
+
+body {
+  @apply bg-black text-white;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--silver);
+  border-radius: 4px;
+}
+
+/* Custom selection */
+::selection {
+  background-color: var(--silver);
+  color: var(--black);
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20;
+  }
+  
+  .section-title {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-semibold mb-10 inline-block relative;
+  }
+  
+  .section-title::after {
+    content: "";
+    @apply absolute bottom-0 left-0 w-1/2 h-0.5 bg-silver;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-silver text-black font-medium rounded-md 
+           hover:bg-white transition-all duration-300 inline-block;
+  }
+  
+  .silver-gradient {
+    background: linear-gradient(135deg, #C0C0C0 0%, #EFEFEF 100%);
+  }
+}
+
+/* Animation utilities */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
