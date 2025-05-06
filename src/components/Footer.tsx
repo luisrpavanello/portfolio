@@ -19,7 +19,7 @@ const Footer = () => {
               &copy; {currentYear} All Rights Reserved
             </p>
             <p className="text-white/50 mt-1">
-              Designed & Built with ❤️
+              Designed & Built by Luis R. Pavanello
             </p>
           </div>
         </div>
