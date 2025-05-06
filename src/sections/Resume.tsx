@@ -183,9 +183,9 @@ const Resume = () => {
       
       <div className="flex justify-center mt-12 opacity-0 animate-on-scroll">
         <a 
-          href="#" 
+          href="/pdf/resume.pdf" 
           className="btn-primary flex items-center"
-          onClick={(e) => e.preventDefault()}
+          download="resume.pdf"
         >
           Download CV
         </a>
