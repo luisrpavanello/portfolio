@@ -183,7 +183,7 @@ const Resume = () => {
       
       <div className="flex justify-center mt-12 opacity-0 animate-on-scroll">
         <a 
-          href="/pdf/resume.pdf" 
+          href="/portfolio/pdf/resume.pdf" 
           className="btn-primary flex items-center"
           download="resume.pdf"
         >
