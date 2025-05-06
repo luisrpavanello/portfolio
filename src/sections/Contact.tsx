@@ -89,17 +89,17 @@ const Contact = () => {
     {
       icon: <MapPin className="text-silver" size={24} />,
       title: 'Location',
-      detail: 'New York, NY, USA'
+      detail: 'Asunción, Paraguay'
     },
     {
       icon: <Mail className="text-silver" size={24} />,
       title: 'Email',
-      detail: 'contact@example.com'
+      detail: 'luisrpavanello@gmail.com'
     },
     {
       icon: <Phone className="text-silver" size={24} />,
       title: 'Phone',
-      detail: '+1 (555) 123-4567'
+      detail: '(+595) 985105984'
     }
   ];
 
@@ -127,12 +127,17 @@ const Contact = () => {
             ))}
             
             <div className="flex gap-4 pt-4">
-              {['LinkedIn', 'GitHub', 'Twitter', 'Instagram'].map((social, index) => (
+              {[
+                { name: 'LinkedIn', url: 'https://linkedin.com/in/luisrpavanello' },
+                { name: 'GitHub', url: 'https://github.com/luisrpavanello' }
+              ].map((social, index) => (
                 <a
                   key={index}
-                  href="#"
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-medium-gray flex items-center justify-center hover:bg-silver transition-colors duration-300 hover:text-black"
-                  aria-label={social}
+                  aria-label={social.name}
                 >
                   {/* Social icons would go here */}
                 </a>

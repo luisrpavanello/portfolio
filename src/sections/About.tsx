@@ -4,18 +4,23 @@ import SectionTitle from '../components/SectionTitle';
 
 const About = () => {
   const skills = [
-    { name: 'Frontend Development', level: 90 },
-    { name: 'Backend Development', level: 85 },
-    { name: 'UI/UX Design', level: 75 },
-    { name: 'Mobile Development', level: 80 },
-    { name: 'DevOps', level: 70 }
+    { name: 'JavaScript', level: 90 }, // Advanced
+    { name: 'Python', level: 90 }, // Advanced
+    { name: 'ReactJS', level: 85 }, // Competent
+    { name: 'NodeJS', level: 85 }, // Competent
+    { name: 'PostgreSQL', level: 85 }, // Competent
+    { name: 'Django', level: 85 }, // Competent
+    { name: 'HTML/CSS', level: 90 }, // Advanced
+    { name: 'Golang', level: 80 }, // Competent
+    { name: 'Ruby', level: 75 }, // Intermediate
+    { name: 'MongoDB', level: 75 }, // Intermediate
   ];
   
   return (
     <section id="about" className="section-container opacity-0">
       <SectionTitle 
         title="About Me" 
-        subtitle="Here you'll find more information about me, what I do, and my current skills mostly in terms of programming and technology"
+        subtitle="Here you'll find more information about me, what I do, and my current skills in programming and technology"
       />
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
@@ -26,18 +31,17 @@ const About = () => {
           </h3>
           <div className="space-y-4 text-white/80">
             <p>
-              I'm a <span className="text-silver font-medium">passionate Frontend Developer</span> with experience in creating 
-              intuitive and responsive web applications that deliver exceptional user experiences.
+              I'm a <span className="text-silver font-medium">Full Stack Developer</span> with over 7 years of experience, 
+              specializing in creating robust and scalable web applications using modern frameworks.
             </p>
             <p>
-              With a strong foundation in modern frontend technologies like <span className="text-silver font-medium">React, 
-              TypeScript, and various CSS frameworks</span>, I specialize in building user-focused 
-              interfaces that are both functional and aesthetically pleasing.
+              With expertise in <span className="text-silver font-medium">JavaScript, Python, ReactJS, NodeJS, PostgreSQL, 
+              and Django</span>, I build efficient solutions that meet client needs. My experience spans the PERN stack, 
+              Python-based backends, and agile development environments.
             </p>
             <p>
-              In addition to my technical skills, I bring a creative mindset, strong problem-solving abilities, 
-              and excellent communication to every project I work on. I'm constantly exploring new technologies 
-              and approaches to enhance my craft.
+              I bring a strong focus on innovation, problem-solving, and collaboration to every project. Fluent in English, 
+              Spanish, and Portuguese, I thrive in diverse teams and am always eager to learn new technologies.
             </p>
             <p>
               I'm open to job opportunities where I can contribute, learn, and grow. If you have a good opportunity 
@@ -72,7 +76,7 @@ const About = () => {
           </div>
           
           <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-4 opacity-0 animate-on-scroll">
-            {['JavaScript', 'TypeScript', 'React', 'Node.js', 'HTML/CSS', 'Git'].map((tech, index) => (
+            {['JavaScript', 'Python', 'ReactJS', 'NodeJS', 'PostgreSQL', 'Django', 'HTML/CSS', 'Golang', 'Ruby', 'MongoDB'].map((tech, index) => (
               <div key={index} className="bg-dark-gray px-4 py-3 rounded-md text-center hover:bg-medium-gray transition-colors duration-300">
                 {tech}
               </div>

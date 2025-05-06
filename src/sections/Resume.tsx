@@ -37,58 +37,86 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
 const Resume = () => {
   const experience = [
     {
-      year: '2021 - Present',
-      title: 'Senior Frontend Developer',
-      organization: 'Tech Solutions Inc.',
-      description: 'Led development of multiple React.js applications, improving user engagement by 35% and reducing loading times by 40% through performance optimizations.',
+      year: '2023 - 2025',
+      title: 'Senior React Developer',
+      organization: 'University of Pacific',
+      description: 'Led projects utilizing the PERN stack (PostgreSQL, Express, ReactJS, Node.js), contributing to the development of robust and efficient web applications. Participated in a project integrated with Python, Django, and other technologies to meet university needs.',
       icon: <Briefcase size={20} />
     },
     {
-      year: '2018 - 2021',
-      title: 'Frontend Developer',
-      organization: 'Digital Innovations',
-      description: 'Developed responsive web applications using React.js and implemented state management with Redux. Collaborated with UX designers to create intuitive interfaces.',
+      year: '2023 - 2023',
+      title: 'Full Stack Developer',
+      organization: 'Microverse',
+      description: 'Designed, developed, and maintained software applications powering Microverse’s online learning platform, leveraging full stack technologies to enhance user experience.',
       icon: <Briefcase size={20} />
     },
     {
-      year: '2016 - 2018',
-      title: 'Web Developer',
-      organization: 'Creative Agency',
-      description: 'Built and maintained websites for various clients using HTML, CSS, JavaScript, and jQuery. Implemented responsive design principles for mobile-first experiences.',
+      year: '2020 - 2022',
+      title: 'Full Stack Developer',
+      organization: 'NexusTech Solutions',
+      description: 'Specialized in the PERN stack and Python with Django, designing and implementing scalable web applications, optimizing PostgreSQL database performance, and collaborating with cross-functional teams to deliver high-quality solutions.',
+      icon: <Briefcase size={20} />
+    },
+    {
+      year: '2017 - 2019',
+      title: 'Mid-Level Python Developer',
+      organization: 'Revolut',
+      description: 'Developed features for banking services, including currency exchange accounts and secure deposit systems, using Python and related technologies in a fintech environment.',
+      icon: <Briefcase size={20} />
+    },
+    {
+      year: '2015 - 2017',
+      title: 'Junior Python Developer',
+      organization: 'Lauzon',
+      description: 'Built customized financial software for local companies and startups, utilizing Python and Golang to deliver tailored solutions.',
       icon: <Briefcase size={20} />
     }
   ];
   
   const education = [
     {
-      year: '2014 - 2016',
-      title: 'Master in Computer Science',
-      organization: 'Tech University',
-      description: 'Specialized in web technologies and user interface design with focus on modern JavaScript frameworks and accessibility standards.',
-      icon: <GraduationCap size={20} />
-    },
-    {
-      year: '2010 - 2014',
-      title: 'Bachelor in Computer Science',
-      organization: 'State University',
-      description: 'Core curriculum in programming fundamentals, data structures, algorithms, and software engineering principles.',
+      year: '2009 - 2014',
+      title: 'Bachelor of Engineering, Industrial Engineering',
+      organization: 'University of Santa Catarina',
+      description: 'Focused on engineering principles, with coursework in programming and software development, laying the foundation for a career in technology.',
       icon: <GraduationCap size={20} />
     }
   ];
   
   const certifications = [
     {
-      year: '2022',
-      title: 'Advanced React and Redux',
-      organization: 'Udemy',
-      description: 'Deep dive into advanced React patterns, Redux middleware, and performance optimization techniques.',
+      year: '2020',
+      title: 'DevOps Essentials Professional Certificate (DEPC)',
+      organization: 'CertiProf',
+      description: 'Gained expertise in DevOps practices, including CI/CD pipelines and infrastructure as code.',
       icon: <Award size={20} />
     },
     {
       year: '2020',
-      title: 'UI/UX Design Fundamentals',
-      organization: 'Design Academy',
-      description: 'Comprehensive course on user experience principles, interface design, and prototyping techniques.',
+      title: 'Python Essentials 1',
+      organization: 'Cisco',
+      description: 'Mastered foundational Python programming concepts and techniques.',
+      icon: <Award size={20} />
+    },
+    {
+      year: '2020',
+      title: 'Python Essentials 2',
+      organization: 'Cisco',
+      description: 'Advanced Python skills, focusing on data structures, APIs, and automation.',
+      icon: <Award size={20} />
+    },
+    {
+      year: '2020',
+      title: 'Front End Development Libraries',
+      organization: 'FreeCodeCamp',
+      description: 'Developed proficiency in front-end technologies, including React and Bootstrap.',
+      icon: <Award size={20} />
+    },
+    {
+      year: '2020',
+      title: 'Back End Development and APIs',
+      organization: 'FreeCodeCamp',
+      description: 'Learned to build and manage APIs and backend services using Node.js and Express.',
       icon: <Award size={20} />
     }
   ];
