@@ -19,64 +19,14 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
+      title: 'EMSystem',
       category: 'web',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      description: 'A complete e-commerce solution with product catalog, cart functionality, and payment processing.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      liveLink: '#',
+      image: '/portfolio/images/1.png',
+      description: 'Complete business management solution with sales, inventory, finance, and reporting modules.',
+      technologies: ['React', 'TypeScript', 'JavaScript', 'CSS', 'PostgreSQL'],
+      liveLink: '/portfolio/images/1.png',
       githubLink: '#'
     },
-    {
-      id: 2,
-      title: 'Task Management App',
-      category: 'web',
-      image: 'https://images.pexels.com/photos/268362/pexels-photo-268362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      description: 'A productivity application for managing tasks, projects, and team collaboration.',
-      technologies: ['React', 'Firebase', 'Tailwind CSS'],
-      liveLink: '#',
-      githubLink: '#'
-    },
-    {
-      id: 3,
-      title: 'Travel Companion App',
-      category: 'mobile',
-      image: 'https://images.pexels.com/photos/3243090/pexels-photo-3243090.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      description: 'A mobile application for travelers to plan itineraries, find attractions, and share experiences.',
-      technologies: ['React Native', 'Google Maps API', 'Firestore'],
-      liveLink: '#',
-      githubLink: '#'
-    },
-    {
-      id: 4,
-      title: 'Healthcare Dashboard',
-      category: 'ui',
-      image: 'https://images.pexels.com/photos/3825368/pexels-photo-3825368.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      description: 'An administrative dashboard for healthcare providers to monitor patient data and appointments.',
-      technologies: ['React', 'D3.js', 'Material UI', 'GraphQL'],
-      liveLink: '#',
-      githubLink: '#'
-    },
-    {
-      id: 5,
-      title: 'Fitness Tracker',
-      category: 'mobile',
-      image: 'https://images.pexels.com/photos/4482890/pexels-photo-4482890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      description: 'A fitness application to track workouts, nutrition, and progress towards health goals.',
-      technologies: ['React Native', 'Redux', 'Firebase'],
-      liveLink: '#',
-      githubLink: '#'
-    },
-    {
-      id: 6,
-      title: 'Creative Agency Website',
-      category: 'ui',
-      image: 'https://images.pexels.com/photos/3182774/pexels-photo-3182774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      description: 'A modern website for a creative agency showcasing their services, portfolio, and team.',
-      technologies: ['React', 'GSAP', 'Styled Components'],
-      liveLink: '#',
-      githubLink: '#'
-    }
   ];
   
   const filteredProjects = filter === 'all' 
