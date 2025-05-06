@@ -116,12 +116,6 @@ const Projects = () => {
                     <Github size={20} className="text-black" />
                   </a>
                 )}
-                <button
-                  className="w-12 h-12 rounded-full bg-silver flex items-center justify-center hover:bg-white transition-colors duration-300"
-                  aria-label={`View details for ${project.title}`}
-                >
-                  <Plus size={20} className="text-black" />
-                </button>
               </div>
             </div>
             <div className="p-6">
