@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { Send, MapPin, Mail, Phone } from 'lucide-react';
+import { Send, MapPin, Mail, Phone, Linkedin, Github } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 import SectionTitle from '../components/SectionTitle';
+import.meta.env.VITE_EMAILJS_USER_ID
 
 interface FormValues {
   name: string;
@@ -67,21 +69,34 @@ const Contact = () => {
     if (validate()) {
       setIsSubmitting(true);
       
-      // Simulate API call
-      setTimeout(() => {
-        setIsSubmitting(false);
-        setSubmitMessage('Your message has been sent successfully!');
-        setValues({
-          name: '',
-          email: '',
-          subject: '',
-          message: ''
+      // Send email using EmailJS
+      emailjs
+        .send(
+          'service_goir5xd',
+          'template_o42j50o',
+          {
+            from_name: values.name,
+            from_email: values.email,
+            subject: values.subject,
+            message: values.message
+          },
+          import.meta.env.VITE_EMAILJS_USER_ID 
+        )
+        .then(() => {
+          setIsSubmitting(false);
+          setSubmitMessage('Your message has been sent successfully!');
+          setValues({
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
+          });
+        })
+        .catch((error) => {
+          setIsSubmitting(false);
+          setSubmitMessage('Failed to send message. Please try again later.');
+          console.error('EmailJS error:', error);
         });
-        
-        setTimeout(() => {
-          setSubmitMessage('');
-        }, 5000);
-      }, 1500);
     }
   };
   
@@ -89,12 +104,12 @@ const Contact = () => {
     {
       icon: <MapPin className="text-silver" size={24} />,
       title: 'Location',
-      detail: 'Asunción, Paraguay'
+      detail: 'Asuncion, Paraguay'
     },
     {
       icon: <Mail className="text-silver" size={24} />,
       title: 'Email',
-      detail: 'luisrpavanello@gmail.com'
+      detail: 'luisrravanello@gmail.com'
     },
     {
       icon: <Phone className="text-silver" size={24} />,
@@ -128,8 +143,8 @@ const Contact = () => {
             
             <div className="flex gap-4 pt-4">
               {[
-                { name: 'LinkedIn', url: 'https://linkedin.com/in/luisrpavanello' },
-                { name: 'GitHub', url: 'https://github.com/luisrpavanello' }
+                { name: 'LinkedIn', url: 'https://linkedin.com/in/luisrpavanello', icon: <Linkedin size={20} /> },
+                { name: 'GitHub', url: 'https://github.com/luisrpavanello', icon: <Github size={20} /> }
               ].map((social, index) => (
                 <a
                   key={index}
@@ -139,7 +154,7 @@ const Contact = () => {
                   className="w-10 h-10 rounded-full bg-medium-gray flex items-center justify-center hover:bg-silver transition-colors duration-300 hover:text-black"
                   aria-label={social.name}
                 >
-                  {/* Social icons would go here */}
+                  {social.icon}
                 </a>
               ))}
             </div>
