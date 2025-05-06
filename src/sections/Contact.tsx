@@ -117,12 +117,12 @@ const Contact = () => {
     {
       icon: <MapPin className="text-silver" size={24} />,
       title: 'Location',
-      detail: 'Asuncion, Paraguay'
+      detail: 'Asunción, Paraguay'
     },
     {
       icon: <Mail className="text-silver" size={24} />,
       title: 'Email',
-      detail: 'luisrravanello@gmail.com'
+      detail: 'luisrpavanello@gmail.com'
     },
     {
       icon: <Phone className="text-silver" size={24} />,
