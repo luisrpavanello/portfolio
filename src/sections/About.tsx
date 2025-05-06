@@ -11,9 +11,6 @@ const About = () => {
     { name: 'PostgreSQL', level: 85 }, // Competent
     { name: 'Django', level: 85 }, // Competent
     { name: 'HTML/CSS', level: 90 }, // Advanced
-    { name: 'Golang', level: 80 }, // Competent
-    { name: 'Ruby', level: 75 }, // Intermediate
-    { name: 'MongoDB', level: 75 }, // Intermediate
   ];
   
   return (
@@ -76,7 +73,7 @@ const About = () => {
           </div>
           
           <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-4 opacity-0 animate-on-scroll">
-            {['JavaScript', 'Python', 'ReactJS', 'NodeJS', 'PostgreSQL', 'Django', 'HTML/CSS', 'Golang', 'Ruby', 'MongoDB'].map((tech, index) => (
+            {['JavaScript', 'Python', 'ReactJS', 'NodeJS', 'PostgreSQL', 'Django', 'HTML/CSS'].map((tech, index) => (
               <div key={index} className="bg-dark-gray px-4 py-3 rounded-md text-center hover:bg-medium-gray transition-colors duration-300">
                 {tech}
               </div>
