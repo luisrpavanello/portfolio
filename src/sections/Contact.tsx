@@ -69,16 +69,29 @@ const Contact = () => {
     if (validate()) {
       setIsSubmitting(true);
       
+      // Format the date and time to a more readable
+      const now = new Date();
+      const formattedDateTime = now.toLocaleString('en-US', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        timeZoneName: 'short'
+      });
+  
       // Send email using EmailJS
       emailjs
         .send(
           'service_goir5xd',
           'template_o42j50o',
           {
-            from_name: values.name,
-            from_email: values.email,
+            name: values.name,
+            email: values.email,
             subject: values.subject,
-            message: values.message
+            message: values.message,
+            time: formattedDateTime
           },
           import.meta.env.VITE_EMAILJS_USER_ID 
         )
