@@ -13,7 +13,7 @@ interface Project {
   githubLink?: string;
 }
 
-const Portfolio = () => {
+const Projects = () => {
   const [filter, setFilter] = useState('all');
   
   const projects: Project[] = [
@@ -91,9 +91,9 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="section-container opacity-0">
+    <section id="projects" className="section-container opacity-0">
       <SectionTitle 
-        title="Portfolio" 
+        title="Projects" 
         subtitle="Explore my recent projects and creative work"
         align="center"
       />
@@ -178,4 +178,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;

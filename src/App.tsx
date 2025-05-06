@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import About from './sections/About';
 import Resume from './sections/Resume';
-import Portfolio from './sections/Portfolio';
+import Projects from './sections/Projects';
 import Contact from './sections/Contact';
 import Footer from './components/Footer';
 import { AnimatePresence } from './components/AnimatePresence';
@@ -15,7 +15,7 @@ function App() {
         <AnimatePresence>
           <About />
           <Resume />
-          <Portfolio />
+          <Projects />
           <Contact />
         </AnimatePresence>
       </main>
