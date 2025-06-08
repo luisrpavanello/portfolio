@@ -69,10 +69,13 @@ portfolio/
    ```
    Open: [http://localhost:5173](http://localhost:5173)
 
-4. Build for production:
+4. Build and Deploy to GitHub Pages:
+   Ensure you're on the `main` branch, then run:
    ```bash
    npm run build
+   npm run deploy
    ```
+   The `gh-pages` branch will be automatically updated, and your site will be deployed to GitHub Pages. Verify the deployment at: [https://luisrpavanello.github.io/portfolio](https://luisrpavanello.github.io/portfolio).
 
 ## ✨ Features
 
@@ -92,10 +95,5 @@ MIT License - See [LICENSE](LICENSE) file.
 Developed with by **[Luis Pavanello](https://github.com/luisrpavanello)**
 
 ---
-
-### 📌 Notes
-- Easily customizable by editing the Tailwind config
-- Add your own projects in the Projects section
-- Update resume PDF in the public/pdf folder
 
 🔧 **Contributions welcome!** Open an issue or submit a PR.
