@@ -25,10 +25,61 @@ const Projects = () => {
       category: 'web',
       image: '/portfolio/images/1.png',
       description: 'Complete business management solution with sales, inventory, finance, and reporting modules.',
-      technologies: ['React', 'TypeScript', 'JavaScript', 'CSS', 'PostgreSQL'],
+      technologies: ['Python', 'HTML', 'JavaScript', 'CSS', 'Django', 'PostgreSQL'],
       liveLink: '/portfolio/images/1.png',
       githubLink: '#'
     },
+    {
+      id: 2,
+      title: 'Foodary - A Recipe Sharing Platform',
+      category: 'web',
+      image: '/portfolio/images/2.png',
+      description: 'Foodary is a platform for food enthusiasts to share and discover delicious recipes. It incorporates key features and concepts you have learned in previous tutorials, such as managing application state, creating reusable components, and implementing page navigation.',
+      technologies: ['HTML', 'JavaScript', 'CSS'],
+      liveLink: '/portfolio/images/2.png',
+      githubLink: 'https://github.com/luisrpavanello/food-community-project/tree/main'
+    },
+    {
+      id: 3,
+      title: 'API Based Weather WebApp',
+      category: 'web',
+      image: '/portfolio/images/3.png',
+      description: 'Weather web application that leverages APIs (Application Programming Interfaces) to obtain the user is location from the browser and fetch weather data from a Weather API service provider.',
+      technologies: ['HTML', 'JavaScript', 'CSS'],
+      liveLink: '/portfolio/images/3.png',
+      githubLink: 'https://github.com/luisrpavanello/API-based-Weather-WebApp'
+    },
+    {
+      id: 4,
+      title: 'BodyCheck - BMI Calculator',
+      category: 'web',
+      image: '/portfolio/images/4.png',
+      description: 'BodyCheck is an application developed in React Native using Expo, designed to calculate Body Mass Index (BMI) in a simple and efficient way.',
+      technologies: ['React Native', 'HTML', 'JavaScript', 'CSS'],
+      liveLink: '/portfolio/images/4.png',
+      githubLink: 'https://github.com/luisrpavanello/React-Native-BodyCheck'
+    },
+    {
+      id: 5,
+      title: 'Signals Conference: Wisdom and Teaching 2023',
+      category: 'web',
+      image: '/portfolio/images/5.png',
+      description: 'Comprehensive website highlighting Christian Conferences throughout the Americas.',
+      technologies: ['HTML', 'JavaScript', 'CSS'],
+      liveLink: '/portfolio/images/5.png',
+      githubLink: 'https://github.com/luisrpavanello/Capstone-Project?tab=readme-ov-file'
+    },
+    {
+      id: 6,
+      title: 'Fintech Web Application',
+      category: 'web',
+      image: '/portfolio/images/6.png',
+      description: 'Application allows listing, adding, and deleting products, adding a description, and marking them as available or unavailable.',
+      technologies: ['Python', 'HTML', 'JavaScript', 'CSS', 'Django', 'PostgreSQL'],
+      liveLink: '/portfolio/images/6.png',
+      githubLink: 'https://github.com/luisrpavanello/Fintech'
+    },
+    
   ];
 
   const filteredProjects = filter === 'all'
@@ -37,9 +88,6 @@ const Projects = () => {
 
   const categories = [
     { id: 'all', name: 'All Projects' },
-    { id: 'web', name: 'Web Apps' },
-    { id: 'mobile', name: 'Mobile Apps' },
-    { id: 'ui', name: 'UI/UX Design' }
   ];
 
   const openModal = (image: string) => {
