@@ -1,99 +1,57 @@
-# Portfolio - Modern Developer Portfolio
+# Luis Pavanello Portfolio
 
-**Portfolio** is a sleek, responsive personal portfolio website built with **React, TypeScript, Vite, and Tailwind CSS**, showcasing professional work, skills, and contact information.
+Personal portfolio for Luis R. Pavanello, a Full Stack Developer focused on React, Next.js, TypeScript, PHP, Laravel, Python, Django, Node.js, MySQL, and PostgreSQL.
 
-## 🚀 Technologies Used
+## Stack
 
-### Core Stack
-- **React** (v18+)
-- **TypeScript**
-- **Vite** (Build Tool)
-- **Tailwind CSS** (Styling)
-- **Framer Motion** (Animations - based on AnimatePresence component)
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- PHP/Laravel experience highlighted in content
+- Python/Django experience highlighted in content
+- MySQL/PostgreSQL experience highlighted in content
+- EmailJS
+- Lucide React
 
-### Tooling
-- **ESLint** (Code quality)
-- **PostCSS** (CSS processing)
-- **Git** (Version control)
+## Local Development
 
-## 📂 Project Structure
+Install dependencies:
 
-```
-portfolio/
-├── public/               # Static assets
-│   ├── images/           # Portfolio images
-│   └── pdf/             # Downloadable resume
-├── src/
-│   ├── components/       # Reusable components
-│   │   ├── AnimatePresence.tsx  # Animation wrapper
-│   │   ├── Footer.tsx
-│   │   ├── Header.tsx
-│   │   └── SectionTitle.tsx
-│   ├── sections/         # Page sections
-│   │   ├── About.tsx
-│   │   ├── Contact.tsx
-│   │   ├── Projects.tsx
-│   │   └── Resume.tsx
-│   ├── App.tsx           # Main application
-│   ├── main.tsx          # Entry point
-│   └── index.css         # Global styles
-├── tailwind.config.js    # Tailwind configuration
-└── vite.config.ts        # Vite configuration
+```bash
+npm install
 ```
 
-## 🛠️ Installation & Usage
+Start the development server:
 
-### Prerequisites
-- Node.js (v18+)
-- npm or yarn
+```bash
+npm run dev
+```
 
-### Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/luisrpavanello/portfolio.git
-   cd portfolio
-   ```
+Build for production:
 
-2. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+```bash
+npm run build
+```
 
-3. Start development server:
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-   Open: [http://localhost:5173](http://localhost:5173)
+## Deployment
 
-4. Build and Deploy to GitHub Pages:
-   Ensure you're on the `main` branch, then run:
-   ```bash
-   npm run build
-   npm run deploy
-   ```
-   The `gh-pages` branch will be automatically updated, and your site will be deployed to GitHub Pages. Verify the deployment at: [https://luisrpavanello.github.io/portfolio](https://luisrpavanello.github.io/portfolio).
+The site is configured for GitHub Pages at:
 
-## ✨ Features
+```txt
+https://luisrpavanello.github.io/portfolio/
+```
 
-- **Responsive Design**: Works on all device sizes
-- **Modern Animations**: Smooth transitions between sections
-- **PDF Resume**: Downloadable resume in PDF format
-- **Contact Form**: Easy way for visitors to reach out
-- **Project Showcase**: Highlight your best work
-- **Fast Performance**: Built with Vite for optimal speed
+Deploy with:
 
-## 📄 License
+```bash
+npm run deploy
+```
 
-MIT License - See [LICENSE](LICENSE) file.
+## Contact Form
 
----
+The contact form uses EmailJS. Configure the public key in a local environment file:
 
-Developed with by **[Luis Pavanello](https://github.com/luisrpavanello)**
-
----
-
-🔧 **Contributions welcome!** Open an issue or submit a PR.
+```bash
+VITE_EMAILJS_USER_ID=your_public_key
+```

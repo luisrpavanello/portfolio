@@ -8,6 +8,7 @@ const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   
   const navLinks = [
+    { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Resume', href: '#resume' },
     { name: 'Projects', href: '#projects' },
@@ -40,9 +41,9 @@ const Header = () => {
         <nav className="flex justify-between items-center">
           <a 
             href="#" 
-            className="text-2xl font-semibold tracking-tighter text-silver hover:text-white transition-colors duration-300"
+            className="text-xl sm:text-2xl font-semibold tracking-tight text-silver hover:text-white transition-colors duration-300"
           >
-            PORTFOLIO
+            Luis Pavanello
           </a>
           
           {/* Desktop navigation */}
@@ -51,7 +52,7 @@ const Header = () => {
               <button
                 key={link.name}
                 onClick={() => scrollToSection(link.href)}
-                className="text-white/80 hover:text-silver transition-colors duration-300 relative group"
+                className="text-sm font-medium text-white/80 hover:text-silver transition-colors duration-300 relative group"
               >
                 {link.name}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-silver group-hover:w-full transition-all duration-300"></span>

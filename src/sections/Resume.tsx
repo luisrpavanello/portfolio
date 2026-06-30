@@ -37,38 +37,45 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
 const Resume = () => {
   const experience = [
     {
-      year: '2023 - 2025',
-      title: 'Senior React Developer',
-      organization: 'University of Pacific',
-      description: 'Led projects utilizing the PERN stack (PostgreSQL, Express, ReactJS, Node.js), contributing to the development of robust and efficient web applications. Participated in a project integrated with Python, Django, and other technologies to meet university needs.',
+      year: 'June 2026 - Present',
+      title: 'Full Stack Developer',
+      organization: 'Acapuedo',
+      description: 'Engineering and maintaining the Acapuedo fintech ecosystem, including Laravel 10 backend APIs, Blade/Livewire admin interfaces, payment and merchant management workflows, 70+ external payment and telecom integrations, JWT authentication, role-based access control, optimized MySQL queries, PHPUnit tests, and PHPStan quality checks.',
       icon: <Briefcase size={20} />
     },
     {
-      year: '2023 - 2023',
+      year: 'December 2023 - February 2026',
+      title: 'Senior React Developer',
+      organization: 'University of Pacific',
+      description: 'Led and maintained web application work using PostgreSQL, Express, React, Node.js, and Next.js, while also contributing to Python, Django, and PostgreSQL systems supporting university operations in an agile environment.',
+      icon: <Briefcase size={20} />
+    },
+    {
+      year: 'January 2023 - October 2023',
       title: 'Full Stack Developer',
       organization: 'Microverse',
-      description: 'Designed, developed, and maintained software applications powering Microverse’s online learning platform, leveraging full stack technologies to enhance user experience.',
+      description: 'Designed, developed, and maintained features for an online learning platform, collaborating with remote teams to improve product reliability and user experience using AngularJS, React, JavaScript, Node.js, and MongoDB.',
       icon: <Briefcase size={20} />
     },
     {
       year: '2020 - 2022',
       title: 'Full Stack Developer',
       organization: 'NexusTech Solutions',
-      description: 'Specialized in the PERN stack and Python with Django, designing and implementing scalable web applications, optimizing PostgreSQL database performance, and collaborating with cross-functional teams to deliver high-quality solutions.',
+      description: 'Built scalable web applications with PostgreSQL, Next.js, Express, React, AngularJS, Node.js, Python, and Django, with emphasis on database performance, API reliability, and cross-functional delivery.',
       icon: <Briefcase size={20} />
     },
     {
       year: '2017 - 2019',
       title: 'Mid-Level Python Developer',
       organization: 'Revolut',
-      description: 'Developed features for banking services, including currency exchange accounts and secure deposit systems, using Python and related technologies in a fintech environment.',
+      description: 'Developed Python features for banking services, including currency exchange account flows and secure deposit-related functionality in a fintech environment.',
       icon: <Briefcase size={20} />
     },
     {
       year: '2015 - 2017',
       title: 'Junior Python Developer',
       organization: 'Lauzon',
-      description: 'Built customized financial software for local companies and startups, utilizing Python and Golang to deliver tailored solutions.',
+      description: 'Built customized financial software for local companies and startups, using Python and Go to deliver focused internal tools.',
       icon: <Briefcase size={20} />
     }
   ];
@@ -107,6 +114,13 @@ const Resume = () => {
     },
     {
       year: '2020',
+      title: 'JavaScript Essentials 1 & 2',
+      organization: 'Cisco Essentials',
+      description: 'Expanded JavaScript fundamentals, browser programming, and application logic skills.',
+      icon: <Award size={20} />
+    },
+    {
+      year: '2020',
       title: 'Front End Development Libraries',
       organization: 'FreeCodeCamp',
       description: 'Developed proficiency in front-end technologies, including React and Bootstrap.',
@@ -118,6 +132,13 @@ const Resume = () => {
       organization: 'FreeCodeCamp',
       description: 'Learned to build and manage APIs and backend services using Node.js and Express.',
       icon: <Award size={20} />
+    },
+    {
+      year: '2023',
+      title: 'Full Stack Development',
+      organization: 'Microverse',
+      description: 'Completed remote full stack development training focused on collaborative software development and modern web technologies.',
+      icon: <Award size={20} />
     }
   ];
 
@@ -125,7 +146,7 @@ const Resume = () => {
     <section id="resume" className="section-container bg-black/60 opacity-0">
       <SectionTitle 
         title="Resume" 
-        subtitle="My education and professional experience journey"
+        subtitle="Professional experience, education, and certifications that support my work as a full stack developer."
       />
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink, Github, Plus, X } from 'lucide-react';
+import { ExternalLink, Github, X } from 'lucide-react';
 import SectionTitle from '../components/SectionTitle';
 
 interface Project {
@@ -8,6 +8,7 @@ interface Project {
   category: string;
   image: string;
   description: string;
+  impact: string;
   technologies: string[];
   liveLink?: string;
   githubLink?: string;
@@ -24,17 +25,18 @@ const Projects = () => {
       title: 'EMSystem',
       category: 'web',
       image: '/portfolio/images/1.png',
-      description: 'Complete business management solution with sales, inventory, finance, and reporting modules.',
+      description: 'Business management system covering sales, inventory, finance, and reporting workflows.',
+      impact: 'Focused on operational visibility, structured data entry, and faster day-to-day administration.',
       technologies: ['Python', 'HTML', 'JavaScript', 'CSS', 'Django', 'PostgreSQL'],
       liveLink: '/portfolio/images/1.png',
-      githubLink: '#'
     },
     {
       id: 2,
       title: 'Foodary - A Recipe Sharing Platform',
       category: 'web',
       image: '/portfolio/images/2.png',
-      description: 'Foodary is a platform for food enthusiasts to share and discover delicious recipes. It incorporates key features and concepts you have learned in previous tutorials, such as managing application state, creating reusable components, and implementing page navigation.',
+      description: 'Recipe sharing platform for publishing, browsing, and discovering community recipes.',
+      impact: 'Built reusable UI components, page navigation, and stateful interactions for a smoother content experience.',
       technologies: ['HTML', 'JavaScript', 'CSS'],
       liveLink: '/portfolio/images/2.png',
       githubLink: 'https://github.com/luisrpavanello/food-community-project/tree/main'
@@ -44,7 +46,8 @@ const Projects = () => {
       title: 'API Based Weather WebApp',
       category: 'web',
       image: '/portfolio/images/3.png',
-      description: 'Weather web application that leverages APIs (Application Programming Interfaces) to obtain the user is location from the browser and fetch weather data from a Weather API service provider.',
+      description: 'Weather app using browser location and external API data to display local conditions.',
+      impact: 'Practiced API integration, browser permissions, async data loading, and resilient UI states.',
       technologies: ['HTML', 'JavaScript', 'CSS'],
       liveLink: '/portfolio/images/3.png',
       githubLink: 'https://github.com/luisrpavanello/API-based-Weather-WebApp'
@@ -54,7 +57,8 @@ const Projects = () => {
       title: 'BodyCheck - BMI Calculator',
       category: 'web',
       image: '/portfolio/images/4.png',
-      description: 'BodyCheck is an application developed in React Native using Expo, designed to calculate Body Mass Index (BMI) in a simple and efficient way.',
+      description: 'React Native mobile app for quick Body Mass Index calculations.',
+      impact: 'Designed a focused mobile flow with clear inputs, instant calculation, and simple health feedback.',
       technologies: ['React Native', 'HTML', 'JavaScript', 'CSS'],
       liveLink: '/portfolio/images/4.png',
       githubLink: 'https://github.com/luisrpavanello/React-Native-BodyCheck'
@@ -64,7 +68,8 @@ const Projects = () => {
       title: 'Signals Conference: Wisdom and Teaching 2023',
       category: 'web',
       image: '/portfolio/images/5.png',
-      description: 'Comprehensive website highlighting Christian Conferences throughout the Americas.',
+      description: 'Conference website presenting event information, speakers, program details, and calls to action.',
+      impact: 'Created a responsive informational experience for visitors exploring the event across devices.',
       technologies: ['HTML', 'JavaScript', 'CSS'],
       liveLink: '/portfolio/images/5.png',
       githubLink: 'https://github.com/luisrpavanello/Capstone-Project?tab=readme-ov-file'
@@ -74,7 +79,8 @@ const Projects = () => {
       title: 'Fintech Web Application',
       category: 'web',
       image: '/portfolio/images/6.png',
-      description: 'Application allows listing, adding, and deleting products, adding a description, and marking them as available or unavailable.',
+      description: 'Product management application for listing, creating, deleting, describing, and toggling availability.',
+      impact: 'Implemented CRUD-oriented workflows with Django, PostgreSQL, and a clear administrative interface.',
       technologies: ['Python', 'HTML', 'JavaScript', 'CSS', 'Django', 'PostgreSQL'],
       liveLink: '/portfolio/images/6.png',
       githubLink: 'https://github.com/luisrpavanello/Fintech'
@@ -104,7 +110,7 @@ const Projects = () => {
     <section id="projects" className="section-container opacity-0">
       <SectionTitle
         title="Projects"
-        subtitle="Explore my recent projects and creative work"
+        subtitle="Selected work showing business systems, API integrations, mobile interfaces, and practical full stack delivery."
         align="center"
       />
 
@@ -169,6 +175,7 @@ const Projects = () => {
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-white/70 mb-4">{project.description}</p>
+              <p className="text-white/55 text-sm mb-5">{project.impact}</p>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, index) => (
                   <span

@@ -1,81 +1,100 @@
 import React from 'react';
-import { Code, Briefcase, GraduationCap, User } from 'lucide-react';
+import { Code, Languages, User } from 'lucide-react';
 import SectionTitle from '../components/SectionTitle';
 
 const About = () => {
-  const skills = [
-    { name: 'JavaScript', level: 90 }, // Advanced
-    { name: 'Python', level: 90 }, // Advanced
-    { name: 'ReactJS', level: 85 }, // Competent
-    { name: 'NodeJS', level: 85 }, // Competent
-    { name: 'PostgreSQL', level: 85 }, // Competent
-    { name: 'Django', level: 85 }, // Competent
-    { name: 'HTML/CSS', level: 90 }, // Advanced
+  const skillGroups = [
+    {
+      title: 'Frontend',
+      items: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'AngularJS', 'Vue.js', 'React Native', 'HTML', 'CSS', 'Tailwind CSS']
+    },
+    {
+      title: 'Backend',
+      items: ['PHP', 'Laravel', 'Python', 'Django', 'Node.js', 'Express', 'Flask', 'REST APIs', 'JWT']
+    },
+    {
+      title: 'Data & Delivery',
+      items: ['PostgreSQL', 'MySQL', 'MariaDB', 'MongoDB', 'Docker', 'Git', 'PHPUnit', 'PHPStan', 'CI/CD basics', 'Agile collaboration', 'DevOps fundamentals']
+    },
+    {
+      title: 'Additional Technologies',
+      items: ['Livewire', 'Blade', 'Bootstrap', 'jQuery', 'DataTables', 'Chart.js', 'Svelte', 'Ruby', 'Mongoose']
+    }
+  ];
+
+  const workingStyle = [
+    'Translate business requirements into dependable product features',
+    'Design maintainable frontend and backend flows instead of one-off fixes',
+    'Communicate clearly with distributed teams in English, Spanish, and Portuguese'
   ];
   
   return (
     <section id="about" className="section-container opacity-0">
       <SectionTitle 
-        title="About Me" 
-        subtitle="Here you'll find more information about me, what I do, and my current skills in programming and technology"
+        title="About" 
+        subtitle="A full stack developer with a practical engineering mindset and experience across product, operations, and internal business systems."
       />
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
         <div className="opacity-0 animate-on-scroll">
           <h3 className="text-2xl font-semibold mb-4 flex items-center">
             <User className="mr-2 text-silver" size={24} />
-            Get to know me!
+            What I bring
           </h3>
           <div className="space-y-4 text-white/80">
             <p>
-              I'm a <span className="text-silver font-medium">Full Stack Developer</span> with over 7 years of experience, 
-              specializing in creating robust and scalable web applications using modern frameworks.
+              I'm a <span className="text-silver font-medium">Full Stack Developer</span> with over 9 years of experience building
+              fintech platforms, web applications, university systems, learning platforms, and business management workflows.
             </p>
             <p>
-              With expertise in <span className="text-silver font-medium">JavaScript, Python, ReactJS, NodeJS, PostgreSQL, 
-              and Django</span>, I build efficient solutions that meet client needs. My experience spans the PERN stack, 
-              Python-based backends, and agile development environments.
+              My core stack is <span className="text-silver font-medium">React, Next.js, PHP, Laravel, Python, Django, Node.js, PostgreSQL, and MySQL</span>.
+              I enjoy work where the frontend, backend, and data model need to fit together cleanly.
             </p>
             <p>
-              I bring a strong focus on innovation, problem-solving, and collaboration to every project. Fluent in English, 
-              Spanish, and Portuguese, I thrive in diverse teams and am always eager to learn new technologies.
+              My current fintech work includes high-availability APIs, merchant administration tools, complex database
+              architecture, and integrations with more than 70 external payment and telecom providers.
             </p>
             <p>
-              I'm open to job opportunities where I can contribute, learn, and grow. If you have a good opportunity 
-              that matches my skills and experience, don't hesitate to contact me.
+              I care about clarity: clear user flows, readable code, realistic delivery, and communication that helps teams move
+              without unnecessary friction.
             </p>
             <a href="#contact" className="btn-primary mt-6">
               Contact Me
             </a>
+          </div>
+
+          <div className="mt-10 opacity-0 animate-on-scroll">
+            <h4 className="text-xl font-semibold mb-4 flex items-center">
+              <Languages className="mr-2 text-silver" size={22} />
+              Collaboration
+            </h4>
+            <ul className="space-y-3 text-white/75">
+              {workingStyle.map((item) => (
+                <li key={item} className="flex gap-3">
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-silver flex-shrink-0" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
         
         <div className="opacity-0 animate-on-scroll">
           <h3 className="text-2xl font-semibold mb-6 flex items-center">
             <Code className="mr-2 text-silver" size={24} />
-            My Skills
+            Technical toolkit
           </h3>
-          <div className="space-y-6">
-            {skills.map((skill, index) => (
-              <div key={index} className="opacity-0 animate-on-scroll">
-                <div className="flex justify-between mb-1">
-                  <span className="font-medium">{skill.name}</span>
-                  <span className="text-silver">{skill.level}%</span>
+          <div className="grid grid-cols-1 gap-5">
+            {skillGroups.map((group) => (
+              <div key={group.title} className="bg-dark-gray border border-white/8 p-6 rounded-md opacity-0 animate-on-scroll">
+                <h4 className="text-lg font-semibold text-silver mb-4">{group.title}</h4>
+                <div className="flex flex-wrap gap-2">
+                  {group.items.map((item) => (
+                    <span key={item} className="text-sm px-3 py-1.5 bg-medium-gray rounded-md text-white/80">
+                      {item}
+                    </span>
+                  ))}
                 </div>
-                <div className="w-full bg-medium-gray rounded-full h-2.5">
-                  <div 
-                    className="silver-gradient h-2.5 rounded-full" 
-                    style={{ width: `${skill.level}%` }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-          
-          <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-4 opacity-0 animate-on-scroll">
-            {['JavaScript', 'Python', 'ReactJS', 'NodeJS', 'PostgreSQL', 'Django', 'HTML/CSS'].map((tech, index) => (
-              <div key={index} className="bg-dark-gray px-4 py-3 rounded-md text-center hover:bg-medium-gray transition-colors duration-300">
-                {tech}
               </div>
             ))}
           </div>

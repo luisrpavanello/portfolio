@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
+import Hero from './sections/Hero';
 import About from './sections/About';
 import Resume from './sections/Resume';
 import Projects from './sections/Projects';
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <main>
         <AnimatePresence>
+          <Hero />
           <About />
           <Resume />
           <Projects />

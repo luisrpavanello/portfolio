@@ -56,6 +56,11 @@ body {
     @apply px-6 py-3 bg-silver text-black font-medium rounded-md 
            hover:bg-white transition-all duration-300 inline-block;
   }
+
+  .btn-secondary {
+    @apply px-6 py-3 border border-white/20 text-white font-medium rounded-md
+           hover:border-silver hover:text-silver transition-all duration-300 inline-block;
+  }
   
   .silver-gradient {
     background: linear-gradient(135deg, #C0C0C0 0%, #EFEFEF 100%);

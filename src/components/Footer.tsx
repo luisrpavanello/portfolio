@@ -8,9 +8,9 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <h2 className="text-2xl font-semibold text-silver">PORTFOLIO</h2>
+            <h2 className="text-2xl font-semibold text-silver">Luis Pavanello</h2>
             <p className="text-white/70 mt-2 max-w-md">
-              Creating beautiful, functional web experiences with passion and precision.
+              Full Stack Developer focused on practical, maintainable web applications with React, Python, Django, Node.js, and PostgreSQL.
             </p>
           </div>
           

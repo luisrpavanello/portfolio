@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Send, MapPin, Mail, Phone, Linkedin, Github } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import SectionTitle from '../components/SectionTitle';
-import.meta.env.VITE_EMAILJS_USER_ID
 
 interface FormValues {
   name: string;
@@ -134,8 +133,8 @@ const Contact = () => {
   return (
     <section id="contact" className="section-container opacity-0">
       <SectionTitle 
-        title="Contact Me" 
-        subtitle="Have a project in mind? Let's discuss how I can help bring your ideas to life"
+        title="Contact" 
+        subtitle="Open to full stack roles, remote collaboration, and practical web application work."
         align="center"
       />
       
@@ -273,6 +272,13 @@ const Contact = () => {
                 </>
               )}
             </button>
+
+            <p className="text-white/50 text-sm mt-4 text-center">
+              Prefer direct contact? Email me at{' '}
+              <a href="mailto:luisrpavanello@gmail.com" className="text-silver hover:text-white">
+                luisrpavanello@gmail.com
+              </a>
+            </p>
           </form>
         </div>
       </div>
