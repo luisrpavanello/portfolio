@@ -1,0 +1,196 @@
+{
+  "name": "Luis Renan Pavanello",
+  "role": "Engineer · Full Stack Developer",
+  "summary": "Full Stack Developer and Independent Technology Consultant with 9+ years of experience building scalable web products across education, fintech, and software. I specialize in backend architecture, database optimization, API integrations, and maintainable full-stack delivery using PHP/Laravel, Python/Django, and modern JavaScript stacks including React, Node.js, and TypeScript. Alongside product development, I have provided remote technology consulting for international clients and contributed to specialized AI evaluation and training engagements for LinkedIn/AnyoneAI. This work included creating high-quality benchmark datasets, detailed annotations, and real-world developer workflows to help improve coding agents and code-editing models. I enjoy turning complex requirements into reliable products through technical rigor, pragmatic problem- solving, and agile collaboration. Fluent in Portuguese, English, and Spanish, I am open to opportunities involving backend systems, full-stack development, fintech, developer tools, and AI-enabled products. Fluent in English, Spanish, and Portuguese, I’m always eager to connect with like-minded professionals and explore opportunities to innovate and grow. Let’s build something amazing together!",
+  "intro": "Full Stack Developer and Independent Technology Consultant with 9+ years of experience building scalable web products across education, fintech, and software.",
+  "contacts": {
+    "location": "Villa Elisa, Deparamento Central, Paraguay",
+    "phone": "+595985105984",
+    "email": "luisrpavanello@gmail.com",
+    "linkedin": "www.linkedin.com/in/luisrpavanello",
+    "github": "github.com/luisrpavanello"
+  },
+  "links": {
+    "email": "mailto:luisrpavanello@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/luisrpavanello",
+    "github": "https://github.com/luisrpavanello"
+  },
+  "skills": [
+    "Back-End Web Development",
+    "Web Application Development",
+    "Agile Environment",
+    "PHP / Laravel",
+    "Python / Django",
+    "JavaScript / TypeScript",
+    "React · Node.js · NestJS",
+    "PostgreSQL · MySQL",
+    "REST APIs · WebSockets",
+    "Docker · AWS · Redis",
+    "Git · PHPUnit · PHPStan"
+  ],
+  "languages": [
+    "Portuguese — native",
+    "English — professional",
+    "Spanish — professional"
+  ],
+  "experience": [
+    {
+      "period": "Aug 2026 — Present",
+      "company": "MUON CORE LTD",
+      "location": "London, UK · Remote",
+      "title": "Back End Developer",
+      "highlights": [
+        "Develops scalable backend services and APIs with Node.js, NestJS, and TypeScript.",
+        "Designs REST integrations with PostgreSQL and Redis, alongside AWS infrastructure.",
+        "Contributes to architecture decisions, code reviews, and agile delivery."
+      ]
+    },
+    {
+      "period": "Feb 2026 — Jul 2026",
+      "company": "acapuedo",
+      "location": "Capital District, Paraguay",
+      "title": "Full Stack Developer",
+      "highlights": [
+        "Built the Laravel 10 API and Blade/Livewire admin interface for a fintech platform covering payments and merchant management.",
+        "Created core financial services and integrated 70+ external payment and telecom providers.",
+        "Optimized MySQL transactions with a custom PDO layer and implemented JWT, role-based access, PHPUnit, and PHPStan."
+      ]
+    },
+    {
+      "period": "Dec 2023 — Feb 2026",
+      "company": "Universidad del Pacífico Paraguay",
+      "location": "Capital District, Paraguay",
+      "title": "Senior React Developer",
+      "highlights": [
+        "Developed an academic system with Django and PostgreSQL processing 10,000+ daily transactions.",
+        "Delivered a PERN academic portal with real-time grades, reporting, and REST/WebSocket integrations.",
+        "Supported 5,000+ daily users and reduced IT support requests by 60%."
+      ]
+    },
+    {
+      "period": "Jan 2023 — Oct 2023",
+      "company": "Microverse",
+      "location": "Remote",
+      "title": "Full Stack Engineer",
+      "highlights": [
+        "Built and maintained applications for a global online learning platform in a distributed team.",
+        "Applied clean-code, testing, and agile practices with JavaScript, React, and Ruby on Rails."
+      ]
+    },
+    {
+      "period": "Jan 2020 — Dec 2022",
+      "company": "NexusTech Solutions LLC",
+      "location": "Paraguay · Remote",
+      "title": "Full Stack Developer",
+      "highlights": [
+        "Built scalable PERN and Python/Django applications for clients across South America.",
+        "Optimized PostgreSQL performance and collaborated with cross-functional teams on high-quality delivery."
+      ]
+    },
+    {
+      "period": "Dec 2018 — Dec 2019",
+      "company": "Revolut",
+      "location": "São Paulo, Brazil",
+      "title": "Python Developer",
+      "highlights": [
+        "Processed streaming and batch data with Apache Spark for bid optimization and real-time analytics.",
+        "Visualized 40+ datasets and delivered analytics solutions using Python, AWS, and Cassandra."
+      ]
+    },
+    {
+      "period": "Dec 2015 — Jan 2017",
+      "company": "Lauzon Consulting",
+      "location": "São Paulo, Brazil",
+      "title": "Junior Python Developer",
+      "highlights": [
+        "Reduced data-collection time by 25% with text-mining and web-crawling tools.",
+        "Designed a Python ETL pipeline and improved data quality by 30%."
+      ]
+    }
+  ],
+  "independentProjects": [
+    {
+      "title": "AI Coding Agent Evaluation & Benchmarking",
+      "organization": "GreenLight Workforce Solutions · LinkedIn / AnyoneAI · May 2026 — Aug 2026",
+      "description": "Specialized evaluation of coding agents and code-editing models, creating benchmarks, annotations, and real-world developer workflows."
+    },
+    {
+      "title": "Remote Technology Consulting",
+      "organization": "Revelo Talent Corp · Aug 2025 — Present",
+      "description": "Consulting for international client engagements, supporting scalable web applications, backend services, APIs, and database optimization."
+    }
+  ],
+  "education": {
+    "title": "Bachelor's Degree in Industrial Engineering",
+    "institution": "Universidade Federal de Santa Catarina",
+    "period": "Jan 2009 — Jan 2014"
+  },
+  "certifications": [
+    {
+      "title": "B1 English for Developers - CEFR",
+      "issuer": "freeCodeCamp",
+      "date": "May 2026"
+    },
+    {
+      "title": "Agile Adoption Report 2025",
+      "issuer": "Certiprof",
+      "date": "May 2025"
+    },
+    {
+      "title": "Workflow Developer Certification",
+      "issuer": "Symphony",
+      "date": "May 2025"
+    },
+    {
+      "title": "JavaScript Essentials 2",
+      "issuer": "Cisco",
+      "date": "May 2025"
+    },
+    {
+      "title": "Back End Development and APIs",
+      "issuer": "freeCodeCamp",
+      "date": "Jul 2023"
+    },
+    {
+      "title": "Front End Development Libraries",
+      "issuer": "freeCodeCamp",
+      "date": "Jul 2023"
+    },
+    {
+      "title": "JavaScript Essentials 1",
+      "issuer": "Cisco",
+      "date": "Jul 2023"
+    },
+    {
+      "title": "HTML/CSS Module",
+      "issuer": "Microverse",
+      "date": "Jun 2023"
+    },
+    {
+      "title": "Python Essentials 2",
+      "issuer": "Cisco",
+      "date": "Sep 2022"
+    },
+    {
+      "title": "Lifelong Learning",
+      "issuer": "Certiprof",
+      "date": "Sep 2022"
+    },
+    {
+      "title": "Python Essentials 1",
+      "issuer": "Cisco",
+      "date": "Sep 2022"
+    },
+    {
+      "title": "Google Fundamentals of Digital Marketing",
+      "issuer": "Google",
+      "date": "Apr 2022"
+    },
+    {
+      "title": "DevOps Essentials Professional Certificate (DEPC)",
+      "issuer": "Certiprof",
+      "date": "Aug 2020 · Expired Sep 2020"
+    }
+  ],
+  "syncedAt": "2026-09-19T19:00:14.340Z"
+}
